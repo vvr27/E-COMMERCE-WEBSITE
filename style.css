@@ -1,0 +1,318 @@
+#header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height:60px;
+    padding-top: 15px;
+    padding-bottom:40px;
+    background:white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;/*the menu bar wont change anytime if we go to any other shop,blog or etc..*/
+    top: 0;
+    left: 0;
+}
+#header a{
+
+padding-top: 65px;
+height:180px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type:none;
+    margin:10px 40px;
+}
+#menu li {
+    list-style:none;
+    padding:0 20px;
+    position:relative;
+}
+#menu li a{
+     text-decoration:none;/*for removing lines under words we use this */
+     font-size:15px;
+     font-weight:600;/*for font thickness we use this*/
+     color:black;
+     transition: 0.3s ease;/*for changing the colour of menubar words after pointing the mouse slowily*/
+}
+#menu li a:hover{/*hover is used for changing the color when we have taken mouse onto the mwnubar words*/
+    color: blue;
+
+}
+#menu li a:hover,
+#menu li a.active{
+    color:blue;
+}
+/* #menu li a.active::after/*it will showing in which menupage we have been there
+#menu li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background:green;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+} */
+#hero{
+    background-image:url("IMG_5054.jpg");
+    height:90vh;
+    background-size: cover;
+    background-position: top 25% right 0;/*for getting the background size in middle we use this tag*/
+    padding-left:50px;/*fro top and bottom is 0 & for left snd right is 80*/
+    padding-right: 2px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content:center;/*for getting the content in center we use this tag*/
+}
+#hero h4{
+    padding-bottom:1px ;
+}
+#hero h1 {
+    color:green;
+}
+#hero button{
+    background-image: url("vvr/logor.JPG");
+    /*background-color: transparent;*/
+    color:red;
+    border : 0;
+    padding: 14px 80px 14px 65px;/*for increasing the shop now button */
+    font-weight:700;
+    font-size:14px;
+}
+#hero button:hover{/*hover is used when we took mouse on the button then the colors will be changed when we took mouse on button*/
+    background-color: #088178;
+    color: #fff
+}
+#feature {
+    padding: 20px 20px;
+}
+#feature .fe-box{
+    width: 230px;
+    text-align: center;
+    padding: 10px 5px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.06);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px;
+}
+#feature .fe-box:hover{
+    box-shadow:10px 10px 54px rgba(211, 12, 49, 0.1);
+}
+/* #feature .fe-box img //it'll make the image to give response
+    width: 100px;
+    margin-bottom: 20%;*/
+
+#feature .fe-box h5{
+    display: inline-block; /*for getting the padding in the text area not more than that we use this */
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4
+}
+#feature{ /*it will make the images in horizontal way*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#feature img{/*for getting the image in coreect fit in padding*/
+    width:100%;
+}
+#feature .fe-box:nth-child(2) h5{ /*for changing the colors of the wishlist,support,orders etc we use this*/
+    background-color: #cce7d0; 
+}
+#feature .fe-box:nth-child(2) img{
+    width:100%;
+}
+#feature .fe-box:nth-child(3) h5{ /*for changing the colors of the wishlist,support,orders etc we use this*/
+    background-color: #e4da7d; 
+
+}
+#feature .fe-box:nth-child(4) h5{ /*for changing the colors of the wishlist,support,orders etc we use this*/
+    background-color: #e793cf; 
+
+}
+#feature .fe-box:nth-child(5) h5{ /*for changing the colors of the wishlist,support,orders etc we use this*/
+    background-color: #88c0d6; 
+
+}
+/*for featured products*/
+#product1{
+    text-align: center;
+}
+#product1 .pro{/*dor giving width to the images*/
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;/*it will shown as to click on it with symbol hand*/
+    box-shadow: 20px 20px 30px rgba(175, 16, 16, 0.02);
+    margin: 15px 0;/*from left and right itll be 0*/
+    transition: 0.2s ease;
+    position: relative;/*for getting the cart position in right side of the new summer shits we use here*/
+
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .description{
+    text-align: start;
+    padding: 5px 0;/*padding for top and bottom is 10 and for left and right is 0*/
+}
+#product1 .pro .description span{/*this is to change color of brand adiidas*/
+    color: #666262;
+    font-weight: 400;
+    font-size: 12px;
+}
+#product1 .pro .description h5{/*for designing the product type name*/
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .description i{/*for designing the stars colors*/
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+
+}
+#product1 .pro .description h4{/*for getting the price color etc*/
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{/*for edit and for position of the cart button we use this*/
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid#cce7d0;
+    position:absolute;
+    bottom: 20px;
+    right: 10px; 
+}
+#product1 .pro-container{/*for getting the summer shirts in the horizontal way we are using it*/
+    display: flex;
+    justify-content:space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;/*we took 8shirts and the products are coming in a single line to avoid that and to get the images down we use this type*/
+}
+/*for repair services weimage and design we use this*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("banner.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{/*this is for repair services font change*/
+    color: rgb(255, 255, 255);
+}
+#banner h2{ /*this is to design Upto 70% off - All Shirts And T-Shirts*/
+    color: rgb(255, 255, 255);
+}
+#banner h2 span{/*this is to get 70% off words in red color*/
+    color:#bf1919
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#banner button:hover{/*hover is used when we took mouse on the button then the colors will be changed when we took mouse on button*/
+    background-color: #088178;
+    color: #fff
+}
+#s1banner { /*to get the womens collection image and mens collection image side by side or in one row we use this*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#s1banner .banner1{/*for mens collection image we are using it*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("photoes1232.jpg");
+    min-width: 650px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+}
+#s1banner .bannerbox2{/*for mens collection design*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("mens.jpg");
+    min-width: 650px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding:20px;
+}
+#s1banner h4{/*for designing the h4 tag*/
+    color:white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#s1banner h2{
+    color:white;
+    font-size: 28px;
+    font-weight: 800;
+}
+#s1banner span{
+    color:white;
+    font-size: 28px;
+    font-weight: 800;
+    padding-bottom: 15px;   
+}
+#s1banner button{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#s1banner button:hover{/*hover is used when we took mouse on the button then the colors will be changed when we took mouse on button*/
+    background-color: #088178;
+    color: #fff
+}
+
+/*for newsletter and sign up slide*/
+#newsletter{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("b16.jpg");
+    background-position: 40% 30%;/*background image from top  itll be 20% and from left 30%*/
+}
+#newsletter span{
+    color:#bf1919 ;
+    font-weight: 800;
+}
